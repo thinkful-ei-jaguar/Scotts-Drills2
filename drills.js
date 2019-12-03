@@ -24,17 +24,11 @@
 
 
 function decode (word) {
-    // let a = word.charAt(2);
-    // let b = word.charAt(3);
-    // let c = word.charAt(4);
-    // let d = word.charAt(5);
-    let firstLetter = word.charAt(0);
-    let decodeLetter = word.charAt(firstLetter);
-    if (typeof firstLetter > "d") {
-        console.log(" ");
-    } else {
-        console.log(decodeLetter);
-    }
-}
-
-decode("Mouse");
+    let decodedLetter = {
+        a: 2,
+        b: 3,
+        c: 4,
+        d: 5,
+    };
+    return decodedLetter;
+ }
