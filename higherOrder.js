@@ -15,15 +15,15 @@
 // repeat(hello, 5);
 // repeat(goodbye, 5);
 
-function filter(arr, fn) {
-    let newArray = [];
-    for(let i = 0; i < arr.length; i++) {
-        if(fn(arr[i])) {
-            newArray.push(arr[i]);
-        }
-    }
-    return newArray;
-}
+// function filter(arr, fn) {
+//     let newArray = [];
+//     for(let i = 0; i < arr.length; i++) {
+//         if(fn(arr[i])) {
+//             newArray.push(arr[i]);
+//         }
+//     }
+//     return newArray;
+// }
 
 
 // // DO NOT EDIT BETWEEN THESE LINES, BUT DO READ THE CODE ----->
@@ -81,7 +81,7 @@ let myArray = ["noggin", "oreo", "the", "moon", "time", "tele", "steed", "his", 
 //convert the input into an array
 
 myArray.reduce(function([word]) {
-    let initialValue = ""; // set initValue parameter to an empty string so future iterations can concatenate
+    let initialValue = " "; // set initValue parameter to an empty string so future iterations can concatenate
     for(let i = 0; i < myArray.length; i++) {
         if (word.length[i] === 3) { //if array is exactly three characters long, add a space
             return " ";
@@ -89,6 +89,7 @@ myArray.reduce(function([word]) {
         return initialValue.charAt(-1).toUpperCase(); //otherwise, capitalize the LAST character of the array element
         }
     }
+    console.log(myArray);
 });
 
-console.log(myArray);
+
